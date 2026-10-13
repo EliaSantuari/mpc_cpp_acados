@@ -92,6 +92,26 @@ int main() {
     time_hist.reserve(Config::sim_steps); // allocate memory
     std::array<double, 2> obs_pos;
 
+
+    // Setting target pointing to model in c_generated_code
+    double yref[LIPM_OPTI_PESSI_NY] = {0};
+    for(int k = 0; k < Config::N_horizon; ++k){
+        yref[0] = Config::c_target[0];
+        yref[1] = Config::c_target[1];
+        yref[17] = Config::c_target[0];
+        yref[18] = Config::c_target[1];
+
+        ocp_nlp_cost_model_set(capsule->nlp_config, capsule->nlp_dims, capsule->nlp_in, k, "yref", yref);
+    }
+    double yref_e[LIPM_OPTI_PESSI_NYN] = {0};
+    yref_e[0] = Config::c_target[0];
+    yref_e[1] = Config::c_target[1];
+    yref_e[6] = Config::c_target[0];
+    yref_e[7] = Config::c_target[1];
+    ocp_nlp_cost_model_set(capsule->nlp_config, capsule->nlp_dims, capsule->nlp_in, Config::N_horizon, "yref", yref_e);
+
+
+
     // ------ MAIN LOOP ------
     for (int step = 0; step < Config::sim_steps; ++step) {
         // Position of the obstacle
@@ -298,6 +318,7 @@ int main() {
         std::cout << "\n--- Performance Statistics ---" << std::endl;
         std::cout << "Average solve time: " << mean_t << " ms" << std::endl;
         std::cout << "Maximum solve time: " << max_t  << " ms" << std::endl;
+        std::cout << "Average solving frequency: " << 1.0 / mean_t * 1000.0 << " Hz" << std::endl; 
         std::cout << "------------------------------" << std::endl;
     }
 
