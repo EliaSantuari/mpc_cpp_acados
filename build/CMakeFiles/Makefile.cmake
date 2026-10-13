@@ -41,6 +41,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/4.2.1/CMakeCCompiler.cmake"
   "CMakeFiles/4.2.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.2.1/CMakeSystem.cmake"
+  "CMakeFiles/VerifyGlobs.cmake"
+  "CMakeFiles/cmake.verify_globs"
   "/opt/homebrew/lib/cmake/yaml-cpp/yaml-cpp-config-version.cmake"
   "/opt/homebrew/lib/cmake/yaml-cpp/yaml-cpp-config.cmake"
   "/opt/homebrew/lib/cmake/yaml-cpp/yaml-cpp-targets-release.cmake"

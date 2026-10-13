@@ -1,6 +1,6 @@
-CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_phase_lipm_one.c.o: \
+CMakeFiles/mpc_sim.dir/c_generated_code/main_lipm_opti_pessi.c.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/SDKSettings.json \
-  /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/acados_solver_phase_lipm_one.c \
+  /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/main_lipm_opti_pessi.c \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stdio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_stdio.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_bounds.h \
@@ -86,18 +86,13 @@ CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_phase_lipm_one.c.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_abort.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_dev_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_mode_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/assert.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_assert.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_static_assert.h \
-  /Users/eliasantuari/development/tesi/acados/include/acados_c/ocp_nlp_interface.h \
-  /Users/eliasantuari/development/tesi/acados/include/acados/ocp_nlp/ocp_nlp_common.h \
-  /Users/eliasantuari/development/tesi/acados/include/acados/ocp_nlp/ocp_nlp_constraints_common.h \
-  /Users/eliasantuari/development/tesi/acados/include/acados/ocp_qp/ocp_qp_common.h \
-  /Users/eliasantuari/development/tesi/acados/include/hpipm/include/hpipm_d_ocp_qp.h \
+  /Users/eliasantuari/development/tesi/acados/include/acados/utils/print.h \
+  /Users/eliasantuari/development/tesi/acados/include/acados/dense_qp/dense_qp_common.h \
+  /Users/eliasantuari/development/tesi/acados/include/hpipm/include/hpipm_d_dense_qp.h \
   /Users/eliasantuari/development/tesi/acados/include/blasfeo/include/blasfeo_target.h \
   /Users/eliasantuari/development/tesi/acados/include/blasfeo/include/blasfeo_common.h \
   /Users/eliasantuari/development/tesi/acados/include/blasfeo/include/blasfeo_block_size.h \
-  /Users/eliasantuari/development/tesi/acados/include/hpipm/include/hpipm_d_ocp_qp_dim.h \
+  /Users/eliasantuari/development/tesi/acados/include/hpipm/include/hpipm_d_dense_qp_dim.h \
   /Users/eliasantuari/development/tesi/acados/include/hpipm/include/hpipm_common.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/stddef.h \
@@ -109,10 +104,17 @@ CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_phase_lipm_one.c.o: \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/__stddef_null.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/__stddef_max_align_t.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/__stddef_offsetof.h \
-  /Users/eliasantuari/development/tesi/acados/include/hpipm/include/hpipm_d_ocp_qp_res.h \
-  /Users/eliasantuari/development/tesi/acados/include/hpipm/include/hpipm_d_ocp_qp_sol.h \
+  /Users/eliasantuari/development/tesi/acados/include/hpipm/include/hpipm_d_dense_qp_res.h \
+  /Users/eliasantuari/development/tesi/acados/include/hpipm/include/hpipm_d_dense_qp_sol.h \
   /Users/eliasantuari/development/tesi/acados/include/acados/utils/types.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/stdbool.h \
+  /Users/eliasantuari/development/tesi/acados/include/acados/ocp_nlp/ocp_nlp_common.h \
+  /Users/eliasantuari/development/tesi/acados/include/acados/ocp_nlp/ocp_nlp_constraints_common.h \
+  /Users/eliasantuari/development/tesi/acados/include/acados/ocp_qp/ocp_qp_common.h \
+  /Users/eliasantuari/development/tesi/acados/include/hpipm/include/hpipm_d_ocp_qp.h \
+  /Users/eliasantuari/development/tesi/acados/include/hpipm/include/hpipm_d_ocp_qp_dim.h \
+  /Users/eliasantuari/development/tesi/acados/include/hpipm/include/hpipm_d_ocp_qp_res.h \
+  /Users/eliasantuari/development/tesi/acados/include/hpipm/include/hpipm_d_ocp_qp_sol.h \
   /Users/eliasantuari/development/tesi/acados/include/acados/utils/external_function_generic.h \
   /Users/eliasantuari/development/tesi/acados/include/acados/ocp_nlp/ocp_nlp_cost_common.h \
   /Users/eliasantuari/development/tesi/acados/include/acados/ocp_nlp/ocp_nlp_dynamics_common.h \
@@ -187,6 +189,9 @@ CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_phase_lipm_one.c.o: \
   /Users/eliasantuari/development/tesi/acados/include/acados/ocp_nlp/ocp_nlp_qpscaling.h \
   /Users/eliasantuari/development/tesi/acados/include/acados/ocp_nlp/ocp_nlp_globalization_common.h \
   /Users/eliasantuari/development/tesi/acados/include/acados/ocp_qp/ocp_qp_xcond_solver.h \
+  /Users/eliasantuari/development/tesi/acados/include/acados/ocp_qp/ocp_qp_common_frontend.h \
+  /Users/eliasantuari/development/tesi/acados/include/acados/utils/math.h \
+  /Users/eliasantuari/development/tesi/acados/include/acados_c/ocp_nlp_interface.h \
   /Users/eliasantuari/development/tesi/acados/include/acados/ocp_nlp/ocp_nlp_constraints_bgh.h \
   /Users/eliasantuari/development/tesi/acados/include/acados/sim/sim_erk_integrator.h \
   /Users/eliasantuari/development/tesi/acados/include/acados/sim/sim_irk_integrator.h \
@@ -195,7 +200,5 @@ CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_phase_lipm_one.c.o: \
   /Users/eliasantuari/development/tesi/acados/include/acados_c/ocp_qp_interface.h \
   /Users/eliasantuari/development/tesi/acados/include/acados_c/sim_interface.h \
   /Users/eliasantuari/development/tesi/acados/include/acados_c/external_function_interface.h \
-  /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_model/phase_lipm_one_model.h \
-  /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constraints.h \
-  /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost.h \
-  /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/acados_solver_phase_lipm_one.h
+  /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/acados_solver_lipm_opti_pessi.h \
+  /Users/eliasantuari/development/tesi/acados/include/blasfeo/include/blasfeo_d_aux_ext_dep.h

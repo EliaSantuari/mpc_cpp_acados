@@ -113,6 +113,7 @@ preinstall/fast:
 
 # clear depends
 depend:
+	$(CMAKE_COMMAND) -P /Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -152,30 +153,6 @@ c_generated_code/acados_solver_lipm_opti_pessi.s: c_generated_code/acados_solver
 c_generated_code/acados_solver_lipm_opti_pessi.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_lipm_opti_pessi.c.s
 .PHONY : c_generated_code/acados_solver_lipm_opti_pessi.c.s
-
-c_generated_code/acados_solver_phase_lipm_one.o: c_generated_code/acados_solver_phase_lipm_one.c.o
-.PHONY : c_generated_code/acados_solver_phase_lipm_one.o
-
-# target to build an object file
-c_generated_code/acados_solver_phase_lipm_one.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_phase_lipm_one.c.o
-.PHONY : c_generated_code/acados_solver_phase_lipm_one.c.o
-
-c_generated_code/acados_solver_phase_lipm_one.i: c_generated_code/acados_solver_phase_lipm_one.c.i
-.PHONY : c_generated_code/acados_solver_phase_lipm_one.i
-
-# target to preprocess a source file
-c_generated_code/acados_solver_phase_lipm_one.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_phase_lipm_one.c.i
-.PHONY : c_generated_code/acados_solver_phase_lipm_one.c.i
-
-c_generated_code/acados_solver_phase_lipm_one.s: c_generated_code/acados_solver_phase_lipm_one.c.s
-.PHONY : c_generated_code/acados_solver_phase_lipm_one.s
-
-# target to generate assembly for a file
-c_generated_code/acados_solver_phase_lipm_one.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_phase_lipm_one.c.s
-.PHONY : c_generated_code/acados_solver_phase_lipm_one.c.s
 
 c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun.o: c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun.c.o
 .PHONY : c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun.o
@@ -225,30 +202,6 @@ c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt.c.s
 .PHONY : c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt.c.s
 
-c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.o: c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c.o
-.PHONY : c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.o
-
-# target to build an object file
-c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c.o
-.PHONY : c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c.o
-
-c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.i: c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c.i
-.PHONY : c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.i
-
-# target to preprocess a source file
-c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c.i
-.PHONY : c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c.i
-
-c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.s: c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c.s
-.PHONY : c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.s
-
-# target to generate assembly for a file
-c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c.s
-.PHONY : c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c.s
-
 c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun.o: c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun.c.o
 .PHONY : c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun.o
 
@@ -296,30 +249,6 @@ c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_ux
 c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt.c.s
 .PHONY : c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt.c.s
-
-c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.o: c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c.o
-.PHONY : c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.o
-
-# target to build an object file
-c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c.o
-.PHONY : c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c.o
-
-c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.i: c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c.i
-.PHONY : c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.i
-
-# target to preprocess a source file
-c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c.i
-.PHONY : c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c.i
-
-c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.s: c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c.s
-.PHONY : c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.s
-
-# target to generate assembly for a file
-c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c.s
-.PHONY : c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c.s
 
 c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun.o: c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun.c.o
 .PHONY : c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun.o
@@ -585,462 +514,6 @@ c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac.c.s
 .PHONY : c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac.c.s
 
-c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.o: c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c.o
-.PHONY : c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.o
-
-# target to build an object file
-c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c.o
-.PHONY : c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c.o
-
-c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.i: c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c.i
-.PHONY : c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.i
-
-# target to preprocess a source file
-c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c.i
-.PHONY : c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c.i
-
-c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.s: c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c.s
-.PHONY : c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.s
-
-# target to generate assembly for a file
-c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c.s
-.PHONY : c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c.s
-
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.o: c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c.o
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.o
-
-# target to build an object file
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c.o
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c.o
-
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.i: c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c.i
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.i
-
-# target to preprocess a source file
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c.i
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c.i
-
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.s: c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c.s
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.s
-
-# target to generate assembly for a file
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c.s
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c.s
-
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.o: c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c.o
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.o
-
-# target to build an object file
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c.o
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c.o
-
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.i: c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c.i
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.i
-
-# target to preprocess a source file
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c.i
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c.i
-
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.s: c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c.s
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.s
-
-# target to generate assembly for a file
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c.s
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c.s
-
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.o: c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c.o
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.o
-
-# target to build an object file
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c.o
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c.o
-
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.i: c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c.i
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.i
-
-# target to preprocess a source file
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c.i
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c.i
-
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.s: c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c.s
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.s
-
-# target to generate assembly for a file
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c.s
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c.s
-
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.o: c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c.o
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.o
-
-# target to build an object file
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c.o
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c.o
-
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.i: c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c.i
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.i
-
-# target to preprocess a source file
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c.i
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c.i
-
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.s: c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c.s
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.s
-
-# target to generate assembly for a file
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c.s
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c.s
-
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.o: c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c.o
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.o
-
-# target to build an object file
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c.o
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c.o
-
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.i: c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c.i
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.i
-
-# target to preprocess a source file
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c.i
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c.i
-
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.s: c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c.s
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.s
-
-# target to generate assembly for a file
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c.s
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c.s
-
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.o: c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c.o
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.o
-
-# target to build an object file
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c.o
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c.o
-
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.i: c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c.i
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.i
-
-# target to preprocess a source file
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c.i
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c.i
-
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.s: c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c.s
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.s
-
-# target to generate assembly for a file
-c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c.s
-.PHONY : c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c.s
-
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.o: c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c.o
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.o
-
-# target to build an object file
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c.o
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c.o
-
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.i: c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c.i
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.i
-
-# target to preprocess a source file
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c.i
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c.i
-
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.s: c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c.s
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.s
-
-# target to generate assembly for a file
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c.s
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c.s
-
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.o: c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c.o
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.o
-
-# target to build an object file
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c.o
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c.o
-
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.i: c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c.i
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.i
-
-# target to preprocess a source file
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c.i
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c.i
-
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.s: c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c.s
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.s
-
-# target to generate assembly for a file
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c.s
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c.s
-
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.o: c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c.o
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.o
-
-# target to build an object file
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c.o
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c.o
-
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.i: c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c.i
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.i
-
-# target to preprocess a source file
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c.i
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c.i
-
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.s: c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c.s
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.s
-
-# target to generate assembly for a file
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c.s
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c.s
-
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.o: c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c.o
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.o
-
-# target to build an object file
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c.o
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c.o
-
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.i: c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c.i
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.i
-
-# target to preprocess a source file
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c.i
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c.i
-
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.s: c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c.s
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.s
-
-# target to generate assembly for a file
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c.s
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c.s
-
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.o: c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c.o
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.o
-
-# target to build an object file
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c.o
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c.o
-
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.i: c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c.i
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.i
-
-# target to preprocess a source file
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c.i
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c.i
-
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.s: c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c.s
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.s
-
-# target to generate assembly for a file
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c.s
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c.s
-
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.o: c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c.o
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.o
-
-# target to build an object file
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c.o
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c.o
-
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.i: c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c.i
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.i
-
-# target to preprocess a source file
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c.i
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c.i
-
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.s: c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c.s
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.s
-
-# target to generate assembly for a file
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c.s
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c.s
-
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.o: c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c.o
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.o
-
-# target to build an object file
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c.o
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c.o
-
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.i: c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c.i
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.i
-
-# target to preprocess a source file
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c.i
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c.i
-
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.s: c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c.s
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.s
-
-# target to generate assembly for a file
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c.s
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c.s
-
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.o: c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c.o
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.o
-
-# target to build an object file
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c.o
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c.o
-
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.i: c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c.i
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.i
-
-# target to preprocess a source file
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c.i
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c.i
-
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.s: c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c.s
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.s
-
-# target to generate assembly for a file
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c.s
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c.s
-
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.o: c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c.o
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.o
-
-# target to build an object file
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c.o
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c.o
-
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.i: c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c.i
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.i
-
-# target to preprocess a source file
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c.i
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c.i
-
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.s: c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c.s
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.s
-
-# target to generate assembly for a file
-c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c.s
-.PHONY : c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c.s
-
-c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.o: c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c.o
-.PHONY : c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.o
-
-# target to build an object file
-c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c.o
-.PHONY : c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c.o
-
-c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.i: c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c.i
-.PHONY : c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.i
-
-# target to preprocess a source file
-c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c.i
-.PHONY : c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c.i
-
-c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.s: c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c.s
-.PHONY : c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.s
-
-# target to generate assembly for a file
-c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c.s
-.PHONY : c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c.s
-
-c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.o: c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c.o
-.PHONY : c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.o
-
-# target to build an object file
-c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c.o
-.PHONY : c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c.o
-
-c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.i: c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c.i
-.PHONY : c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.i
-
-# target to preprocess a source file
-c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c.i
-.PHONY : c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c.i
-
-c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.s: c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c.s
-.PHONY : c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.s
-
-# target to generate assembly for a file
-c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c.s
-.PHONY : c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c.s
-
-c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.o: c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.o
-.PHONY : c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.o
-
-# target to build an object file
-c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.o
-.PHONY : c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.o
-
-c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.i: c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.i
-.PHONY : c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.i
-
-# target to preprocess a source file
-c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.i
-.PHONY : c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.i
-
-c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.s: c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.s
-.PHONY : c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.s
-
-# target to generate assembly for a file
-c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.s
-.PHONY : c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.s
-
 src/config.o: src/config.cpp.o
 .PHONY : src/config.o
 
@@ -1173,27 +646,18 @@ help:
 	@echo "... c_generated_code/acados_solver_lipm_opti_pessi.o"
 	@echo "... c_generated_code/acados_solver_lipm_opti_pessi.i"
 	@echo "... c_generated_code/acados_solver_lipm_opti_pessi.s"
-	@echo "... c_generated_code/acados_solver_phase_lipm_one.o"
-	@echo "... c_generated_code/acados_solver_phase_lipm_one.i"
-	@echo "... c_generated_code/acados_solver_phase_lipm_one.s"
 	@echo "... c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun.o"
 	@echo "... c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun.i"
 	@echo "... c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun.s"
 	@echo "... c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt.o"
 	@echo "... c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt.i"
 	@echo "... c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt.s"
-	@echo "... c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.o"
-	@echo "... c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.i"
-	@echo "... c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.s"
 	@echo "... c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun.o"
 	@echo "... c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun.i"
 	@echo "... c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun.s"
 	@echo "... c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt.o"
 	@echo "... c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt.i"
 	@echo "... c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt.s"
-	@echo "... c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.o"
-	@echo "... c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.i"
-	@echo "... c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.s"
 	@echo "... c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun.o"
 	@echo "... c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun.i"
 	@echo "... c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun.s"
@@ -1227,63 +691,6 @@ help:
 	@echo "... c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac.o"
 	@echo "... c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac.i"
 	@echo "... c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac.s"
-	@echo "... c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.o"
-	@echo "... c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.i"
-	@echo "... c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.s"
-	@echo "... c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.o"
-	@echo "... c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.i"
-	@echo "... c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.s"
-	@echo "... c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.o"
-	@echo "... c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.i"
-	@echo "... c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.s"
-	@echo "... c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.o"
-	@echo "... c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.i"
-	@echo "... c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.s"
-	@echo "... c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.o"
-	@echo "... c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.i"
-	@echo "... c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.s"
-	@echo "... c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.o"
-	@echo "... c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.i"
-	@echo "... c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.s"
-	@echo "... c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.o"
-	@echo "... c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.i"
-	@echo "... c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.s"
-	@echo "... c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.o"
-	@echo "... c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.i"
-	@echo "... c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.s"
-	@echo "... c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.o"
-	@echo "... c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.i"
-	@echo "... c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.s"
-	@echo "... c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.o"
-	@echo "... c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.i"
-	@echo "... c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.s"
-	@echo "... c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.o"
-	@echo "... c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.i"
-	@echo "... c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.s"
-	@echo "... c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.o"
-	@echo "... c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.i"
-	@echo "... c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.s"
-	@echo "... c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.o"
-	@echo "... c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.i"
-	@echo "... c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.s"
-	@echo "... c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.o"
-	@echo "... c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.i"
-	@echo "... c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.s"
-	@echo "... c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.o"
-	@echo "... c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.i"
-	@echo "... c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.s"
-	@echo "... c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.o"
-	@echo "... c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.i"
-	@echo "... c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.s"
-	@echo "... c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.o"
-	@echo "... c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.i"
-	@echo "... c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.s"
-	@echo "... c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.o"
-	@echo "... c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.i"
-	@echo "... c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.s"
-	@echo "... c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.o"
-	@echo "... c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.i"
-	@echo "... c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.s"
 	@echo "... src/config.o"
 	@echo "... src/config.i"
 	@echo "... src/config.s"
@@ -1310,6 +717,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P /Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

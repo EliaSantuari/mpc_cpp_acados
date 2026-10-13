@@ -25,7 +25,7 @@ include_directories(
 link_directories(${ACADOS_DIR}/lib)
 
 # 1. Trova tutti i file .c dentro c_generated_code (solver, modello, costi, vincoli)
-file(GLOB_RECURSE ACADOS_C_FILES "c_generated_code/*.c")
+file(GLOB_RECURSE ACADOS_C_FILES CONFIGURE_DEPENDS "c_generated_code/*.c")
 
 # 2. Acados genera anche un file main_<tuo_modello>.c di esempio. 
 # Dobbiamo escluderlo per non avere conflitti con il nostro main.cpp
@@ -47,5 +47,5 @@ target_link_libraries(mpc_sim
     hpipm
     blasfeo
     m
-    yaml-cpp
+    yaml-cpp::yaml-cpp
 )

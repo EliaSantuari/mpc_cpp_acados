@@ -156,24 +156,10 @@ CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_lipm_opti_pessi.c.s: cmake
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_lipm_opti_pessi.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/acados_solver_lipm_opti_pessi.c -o CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_lipm_opti_pessi.c.s
 
-CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_phase_lipm_one.c.o: CMakeFiles/mpc_sim.dir/flags.make
-CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_phase_lipm_one.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/acados_solver_phase_lipm_one.c
-CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_phase_lipm_one.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_phase_lipm_one.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_phase_lipm_one.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_phase_lipm_one.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_phase_lipm_one.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/acados_solver_phase_lipm_one.c
-
-CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_phase_lipm_one.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_phase_lipm_one.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/acados_solver_phase_lipm_one.c > CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_phase_lipm_one.c.i
-
-CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_phase_lipm_one.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_phase_lipm_one.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/acados_solver_phase_lipm_one.c -o CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_phase_lipm_one.c.s
-
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun.c.o: CMakeFiles/mpc_sim.dir/flags.make
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun.c
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun.c
 
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun.c.i: cmake_force
@@ -187,7 +173,7 @@ CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pe
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt.c.o: CMakeFiles/mpc_sim.dir/flags.make
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt.c
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt.c
 
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt.c.i: cmake_force
@@ -198,24 +184,10 @@ CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pe
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt.c -o CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt.c.s
 
-CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c.o: CMakeFiles/mpc_sim.dir/flags.make
-CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c
-CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c
-
-CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c > CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c.i
-
-CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c -o CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c.s
-
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun.c.o: CMakeFiles/mpc_sim.dir/flags.make
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun.c
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun.c
 
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun.c.i: cmake_force
@@ -229,7 +201,7 @@ CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pe
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt.c.o: CMakeFiles/mpc_sim.dir/flags.make
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt.c
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt.c
 
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt.c.i: cmake_force
@@ -240,24 +212,10 @@ CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pe
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt.c -o CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt.c.s
 
-CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c.o: CMakeFiles/mpc_sim.dir/flags.make
-CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c
-CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c
-
-CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c > CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c.i
-
-CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c -o CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c.s
-
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun.c.o: CMakeFiles/mpc_sim.dir/flags.make
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun.c
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun.c
 
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun.c.i: cmake_force
@@ -271,7 +229,7 @@ CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cos
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun_jac_ut_xt.c.o: CMakeFiles/mpc_sim.dir/flags.make
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun_jac_ut_xt.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun_jac_ut_xt.c
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun_jac_ut_xt.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun_jac_ut_xt.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun_jac_ut_xt.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun_jac_ut_xt.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun_jac_ut_xt.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun_jac_ut_xt.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun_jac_ut_xt.c
 
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun_jac_ut_xt.c.i: cmake_force
@@ -285,7 +243,7 @@ CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cos
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_hess.c.o: CMakeFiles/mpc_sim.dir/flags.make
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_hess.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_hess.c
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_hess.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_hess.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_hess.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_hess.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_hess.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_hess.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_hess.c
 
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_hess.c.i: cmake_force
@@ -299,7 +257,7 @@ CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cos
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_fun.c.o: CMakeFiles/mpc_sim.dir/flags.make
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_fun.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_fun.c
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_fun.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_fun.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_fun.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_fun.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_fun.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_fun.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_fun.c
 
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_fun.c.i: cmake_force
@@ -313,7 +271,7 @@ CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cos
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_fun_jac_ut_xt.c.o: CMakeFiles/mpc_sim.dir/flags.make
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_fun_jac_ut_xt.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_fun_jac_ut_xt.c
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_fun_jac_ut_xt.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_fun_jac_ut_xt.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_fun_jac_ut_xt.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_fun_jac_ut_xt.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_fun_jac_ut_xt.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_fun_jac_ut_xt.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_fun_jac_ut_xt.c
 
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_fun_jac_ut_xt.c.i: cmake_force
@@ -327,7 +285,7 @@ CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cos
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_hess.c.o: CMakeFiles/mpc_sim.dir/flags.make
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_hess.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_hess.c
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_hess.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_hess.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_hess.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_hess.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_hess.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_hess.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_hess.c
 
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_e_hess.c.i: cmake_force
@@ -341,7 +299,7 @@ CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cos
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_fun.c.o: CMakeFiles/mpc_sim.dir/flags.make
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_fun.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_fun.c
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_fun.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_fun.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_fun.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_fun.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_fun.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_fun.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_fun.c
 
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_fun.c.i: cmake_force
@@ -355,7 +313,7 @@ CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cos
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_fun_jac_ut_xt.c.o: CMakeFiles/mpc_sim.dir/flags.make
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_fun_jac_ut_xt.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_fun_jac_ut_xt.c
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_fun_jac_ut_xt.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_fun_jac_ut_xt.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_fun_jac_ut_xt.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_fun_jac_ut_xt.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_fun_jac_ut_xt.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_fun_jac_ut_xt.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_fun_jac_ut_xt.c
 
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_fun_jac_ut_xt.c.i: cmake_force
@@ -369,7 +327,7 @@ CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cos
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_hess.c.o: CMakeFiles/mpc_sim.dir/flags.make
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_hess.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_hess.c
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_hess.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_hess.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_hess.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_hess.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_hess.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_hess.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_hess.c
 
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_hess.c.i: cmake_force
@@ -383,7 +341,7 @@ CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cos
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun.c.o: CMakeFiles/mpc_sim.dir/flags.make
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun.c
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun.c
 
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun.c.i: cmake_force
@@ -397,7 +355,7 @@ CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dy
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac.c.o: CMakeFiles/mpc_sim.dir/flags.make
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac.c
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac.c
 
 CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac.c.i: cmake_force
@@ -408,272 +366,6 @@ CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dy
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac.c -o CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac.c.s
 
-CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c.o: CMakeFiles/mpc_sim.dir/flags.make
-CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c
-CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c
-
-CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c > CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c.i
-
-CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c -o CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c.s
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c.o: CMakeFiles/mpc_sim.dir/flags.make
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c > CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c.i
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c.s
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c.o: CMakeFiles/mpc_sim.dir/flags.make
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c > CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c.i
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c.s
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c.o: CMakeFiles/mpc_sim.dir/flags.make
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c > CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c.i
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c.s
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c.o: CMakeFiles/mpc_sim.dir/flags.make
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c > CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c.i
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c.s
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c.o: CMakeFiles/mpc_sim.dir/flags.make
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c > CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c.i
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c.s
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c.o: CMakeFiles/mpc_sim.dir/flags.make
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c > CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c.i
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c.s
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c.o: CMakeFiles/mpc_sim.dir/flags.make
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c > CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c.i
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c.s
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c.o: CMakeFiles/mpc_sim.dir/flags.make
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c > CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c.i
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c.s
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c.o: CMakeFiles/mpc_sim.dir/flags.make
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c > CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c.i
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c.s
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c.o: CMakeFiles/mpc_sim.dir/flags.make
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c > CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c.i
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c.s
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c.o: CMakeFiles/mpc_sim.dir/flags.make
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c > CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c.i
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c.s
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c.o: CMakeFiles/mpc_sim.dir/flags.make
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c > CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c.i
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c.s
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c.o: CMakeFiles/mpc_sim.dir/flags.make
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c > CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c.i
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c.s
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c.o: CMakeFiles/mpc_sim.dir/flags.make
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c > CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c.i
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c.s
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c.o: CMakeFiles/mpc_sim.dir/flags.make
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c > CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c.i
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c.s
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c.o: CMakeFiles/mpc_sim.dir/flags.make
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c > CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c.i
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c.s
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c.o: CMakeFiles/mpc_sim.dir/flags.make
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c > CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c.i
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c.s
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.o: CMakeFiles/mpc_sim.dir/flags.make
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.o: /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.o: CMakeFiles/mpc_sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.o -MF CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.o.d -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.o -c /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c > CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.i
-
-CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c -o CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.s
-
 # Object files for target mpc_sim
 mpc_sim_OBJECTS = \
 "CMakeFiles/mpc_sim.dir/src/main.cpp.o" \
@@ -682,13 +374,10 @@ mpc_sim_OBJECTS = \
 "CMakeFiles/mpc_sim.dir/src/obstacle_manager.cpp.o" \
 "CMakeFiles/mpc_sim.dir/src/data_logger.cpp.o" \
 "CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_lipm_opti_pessi.c.o" \
-"CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_phase_lipm_one.c.o" \
 "CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun.c.o" \
 "CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt.c.o" \
-"CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c.o" \
 "CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun.c.o" \
 "CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt.c.o" \
-"CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c.o" \
 "CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun.c.o" \
 "CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun_jac_ut_xt.c.o" \
 "CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_hess.c.o" \
@@ -699,26 +388,7 @@ mpc_sim_OBJECTS = \
 "CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_fun_jac_ut_xt.c.o" \
 "CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_hess.c.o" \
 "CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun.c.o" \
-"CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac.c.o" \
-"CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c.o" \
-"CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c.o" \
-"CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c.o" \
-"CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c.o" \
-"CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c.o" \
-"CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c.o" \
-"CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c.o" \
-"CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c.o" \
-"CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c.o" \
-"CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c.o" \
-"CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c.o" \
-"CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c.o" \
-"CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c.o" \
-"CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c.o" \
-"CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c.o" \
-"CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c.o" \
-"CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c.o" \
-"CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c.o" \
-"CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.o"
+"CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac.c.o"
 
 # External object files for target mpc_sim
 mpc_sim_EXTERNAL_OBJECTS =
@@ -729,13 +399,10 @@ mpc_sim: CMakeFiles/mpc_sim.dir/src/gait_planner.cpp.o
 mpc_sim: CMakeFiles/mpc_sim.dir/src/obstacle_manager.cpp.o
 mpc_sim: CMakeFiles/mpc_sim.dir/src/data_logger.cpp.o
 mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_lipm_opti_pessi.c.o
-mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/acados_solver_phase_lipm_one.c.o
 mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun.c.o
 mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt.c.o
-mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_0_fun_jac_uxt_zt_hess.c.o
 mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun.c.o
 mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt.c.o
-mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_constraints/lipm_opti_pessi_constr_h_fun_jac_uxt_zt_hess.c.o
 mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun.c.o
 mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_fun_jac_ut_xt.c.o
 mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_0_hess.c.o
@@ -747,29 +414,10 @@ mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_
 mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_cost/lipm_opti_pessi_cost_y_hess.c.o
 mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun.c.o
 mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac.c.o
-mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/lipm_opti_pessi_model/lipm_opti_pessi_dyn_disc_phi_fun_jac_hess.c.o
-mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun.c.o
-mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt.c.o
-mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_0_fun_jac_uxt_zt_hess.c.o
-mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun.c.o
-mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt.c.o
-mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_constraints/phase_lipm_one_constr_h_fun_jac_uxt_zt_hess.c.o
-mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun.c.o
-mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_fun_jac_ut_xt.c.o
-mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_0_hess.c.o
-mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun.c.o
-mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_fun_jac_ut_xt.c.o
-mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_e_hess.c.o
-mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun.c.o
-mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_fun_jac_ut_xt.c.o
-mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_cost/phase_lipm_one_cost_y_hess.c.o
-mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun.c.o
-mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac.c.o
-mpc_sim: CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.o
 mpc_sim: CMakeFiles/mpc_sim.dir/build.make
 mpc_sim: /opt/homebrew/lib/libyaml-cpp.0.9.0.dylib
 mpc_sim: CMakeFiles/mpc_sim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Linking CXX executable mpc_sim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable mpc_sim"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mpc_sim.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

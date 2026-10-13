@@ -85,12 +85,12 @@ clean: CMakeFiles/mpc_sim.dir/clean
 CMakeFiles/mpc_sim.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44 "Built target mpc_sim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22 "Built target mpc_sim"
 .PHONY : CMakeFiles/mpc_sim.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mpc_sim.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles 44
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles 22
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mpc_sim.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles 0
 .PHONY : CMakeFiles/mpc_sim.dir/rule
@@ -102,7 +102,7 @@ mpc_sim: CMakeFiles/mpc_sim.dir/rule
 # codegen rule for target.
 CMakeFiles/mpc_sim.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44 "Finished codegen for target mpc_sim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22 "Finished codegen for target mpc_sim"
 .PHONY : CMakeFiles/mpc_sim.dir/codegen
 
 # clean rule for target.
@@ -117,6 +117,7 @@ CMakeFiles/mpc_sim.dir/clean:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P /Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
