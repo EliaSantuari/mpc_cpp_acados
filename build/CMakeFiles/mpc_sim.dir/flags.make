@@ -5,7 +5,7 @@
 # compile CXX with /usr/bin/c++
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/eliasantuari/development/tesi/mpc_cpp_acados/include -I/Users/eliasantuari/development/tesi/acados/include -I/Users/eliasantuari/development/tesi/acados/include/acados -I/Users/eliasantuari/development/tesi/acados/include/blasfeo/include -I/Users/eliasantuari/development/tesi/acados/include/hpipm/include -I/Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code
+C_INCLUDES = -I/Users/eliasantuari/development/tesi/mpc_cpp_acados/include -I/Users/eliasantuari/development/tesi/acados/include -I/Users/eliasantuari/development/tesi/acados/include/acados -I/Users/eliasantuari/development/tesi/acados/include/blasfeo/include -I/Users/eliasantuari/development/tesi/acados/include/hpipm/include -I/Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code -isystem /opt/homebrew/include
 
 C_FLAGSarm64 =  -arch arm64
 
@@ -13,7 +13,7 @@ C_FLAGS =  -arch arm64
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/eliasantuari/development/tesi/mpc_cpp_acados/include -I/Users/eliasantuari/development/tesi/acados/include -I/Users/eliasantuari/development/tesi/acados/include/acados -I/Users/eliasantuari/development/tesi/acados/include/blasfeo/include -I/Users/eliasantuari/development/tesi/acados/include/hpipm/include -I/Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code
+CXX_INCLUDES = -I/Users/eliasantuari/development/tesi/mpc_cpp_acados/include -I/Users/eliasantuari/development/tesi/acados/include -I/Users/eliasantuari/development/tesi/acados/include/acados -I/Users/eliasantuari/development/tesi/acados/include/blasfeo/include -I/Users/eliasantuari/development/tesi/acados/include/hpipm/include -I/Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code -isystem /opt/homebrew/include
 
 CXX_FLAGSarm64 = -std=gnu++17 -arch arm64
 

@@ -810,22 +810,30 @@ void lipm_opti_pessi_acados_setup_nlp_in(lipm_opti_pessi_solver_capsule* capsule
     double* lbx0 = lubx0;
     double* ubx0 = lubx0 + NBX0;
     // change only the non-zero elements:
-    lbx0[6] = 0.2407;
-    ubx0[6] = 0.2407;
-    lbx0[7] = -0.134;
-    ubx0[7] = -0.134;
-    lbx0[8] = -0.2407;
-    ubx0[8] = -0.2407;
-    lbx0[9] = 0.134;
-    ubx0[9] = 0.134;
-    lbx0[17] = 0.2407;
-    ubx0[17] = 0.2407;
-    lbx0[18] = -0.134;
-    ubx0[18] = -0.134;
-    lbx0[19] = -0.2407;
-    ubx0[19] = -0.2407;
-    lbx0[20] = 0.134;
-    ubx0[20] = 0.134;
+    lbx0[0] = -0.8;
+    ubx0[0] = -0.8;
+    lbx0[1] = -0.5;
+    ubx0[1] = -0.5;
+    lbx0[6] = -0.5593;
+    ubx0[6] = -0.5593;
+    lbx0[7] = -0.634;
+    ubx0[7] = -0.634;
+    lbx0[8] = -1.0407;
+    ubx0[8] = -1.0407;
+    lbx0[9] = -0.366;
+    ubx0[9] = -0.366;
+    lbx0[11] = -0.8;
+    ubx0[11] = -0.8;
+    lbx0[12] = -0.5;
+    ubx0[12] = -0.5;
+    lbx0[17] = -0.5593;
+    ubx0[17] = -0.5593;
+    lbx0[18] = -0.634;
+    ubx0[18] = -0.634;
+    lbx0[19] = -1.0407;
+    ubx0[19] = -1.0407;
+    lbx0[20] = -0.366;
+    ubx0[20] = -0.366;
 
     ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, nlp_out, 0, "idxbx", idxbx0);
     ocp_nlp_constraints_model_set(nlp_config, nlp_dims, nlp_in, nlp_out, 0, "lbx", lbx0);
@@ -1270,19 +1278,19 @@ static void lipm_opti_pessi_acados_create_set_opts(lipm_opti_pessi_solver_capsul
 
 
     // set SQP specific options
-    double nlp_solver_tol_stat = 0.00001;
+    double nlp_solver_tol_stat = 0.0001;
     ocp_nlp_solver_opts_set(nlp_config, nlp_opts, "tol_stat", &nlp_solver_tol_stat);
 
-    double nlp_solver_tol_eq = 0.00001;
+    double nlp_solver_tol_eq = 0.0001;
     ocp_nlp_solver_opts_set(nlp_config, nlp_opts, "tol_eq", &nlp_solver_tol_eq);
 
-    double nlp_solver_tol_ineq = 0.00001;
+    double nlp_solver_tol_ineq = 0.0001;
     ocp_nlp_solver_opts_set(nlp_config, nlp_opts, "tol_ineq", &nlp_solver_tol_ineq);
 
-    double nlp_solver_tol_comp = 0.00001;
+    double nlp_solver_tol_comp = 0.0001;
     ocp_nlp_solver_opts_set(nlp_config, nlp_opts, "tol_comp", &nlp_solver_tol_comp);
 
-    int nlp_solver_max_iter = 4;
+    int nlp_solver_max_iter = 5;
     ocp_nlp_solver_opts_set(nlp_config, nlp_opts, "max_iter", &nlp_solver_max_iter);
 
     // set options for adaptive Levenberg-Marquardt Update
@@ -1379,14 +1387,18 @@ void lipm_opti_pessi_acados_set_nlp_out(lipm_opti_pessi_solver_capsule* capsule)
     double* x0 = xu0;
 
     // initialize with x0
-    x0[6] = 0.2407;
-    x0[7] = -0.134;
-    x0[8] = -0.2407;
-    x0[9] = 0.134;
-    x0[17] = 0.2407;
-    x0[18] = -0.134;
-    x0[19] = -0.2407;
-    x0[20] = 0.134;
+    x0[0] = -0.8;
+    x0[1] = -0.5;
+    x0[6] = -0.5593;
+    x0[7] = -0.634;
+    x0[8] = -1.0407;
+    x0[9] = -0.366;
+    x0[11] = -0.8;
+    x0[12] = -0.5;
+    x0[17] = -0.5593;
+    x0[18] = -0.634;
+    x0[19] = -1.0407;
+    x0[20] = -0.366;
 
 
     double* u0 = xu0 + NX;
@@ -1664,7 +1676,7 @@ void lipm_opti_pessi_acados_print_stats(lipm_opti_pessi_solver_capsule* capsule)
         printf("stat_n_max = %d is too small, increase it in the template!\n", stat_n_max);
         exit(1);
     }
-    double stat[80];
+    double stat[96];
     ocp_nlp_get(capsule->nlp_solver, "statistics", stat);
 
     int nrow = nlp_iter+1 < stat_m ? nlp_iter+1 : stat_m;

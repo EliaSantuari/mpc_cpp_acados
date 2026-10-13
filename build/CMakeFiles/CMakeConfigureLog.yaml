@@ -2503,3 +2503,242 @@ events:
       LTO support using: LLVM version 21.0.0 (static support for 30, runtime is 30)
       TAPI support using: Apple TAPI version 21.0.0 (tapi-2100.3.8.1)
 ...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:14 (find_package)"
+    name: "yaml-cpp"
+    configs:
+      -
+        filename: "yaml-cppConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "yaml-cpp-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "yaml-cpp"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles/pkgRedirects/yaml-cppConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles/pkgRedirects/yaml-cpp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/eliasantuari/development/tesi/acados/yaml-cppConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/eliasantuari/development/tesi/acados/yaml-cpp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/eliasantuari/development/tesi/acados/cmake/yaml-cppConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/eliasantuari/development/tesi/acados/cmake/yaml-cpp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/yaml-cppConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/yaml-cpp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Library/Frameworks/Python.framework/Versions/3.10/yaml-cppConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Library/Frameworks/Python.framework/Versions/3.10/yaml-cpp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/eliasantuari/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/yaml-cppConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/eliasantuari/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/yaml-cpp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/eliasantuari/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/yaml-cppConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/eliasantuari/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/yaml-cpp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/System/Cryptexes/App/usr/yaml-cppConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/System/Cryptexes/App/usr/yaml-cpp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/yaml-cppConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/yaml-cpp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/yaml-cppConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/yaml-cpp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/X11/yaml-cppConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/X11/yaml-cpp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Library/Apple/usr/yaml-cppConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Library/Apple/usr/yaml-cpp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Library/TeX/texbin/yaml-cppConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Library/TeX/texbin/yaml-cpp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/yaml-cppConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/yaml-cpp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/lib/cmake/yaml-cpp/yaml-cppConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/opt/homebrew/lib/cmake/yaml-cpp/yaml-cpp-config.cmake"
+      mode: "config"
+      version: "0.9.0"
+    search_context:
+      ENV{PATH}:
+        - "/Users/eliasantuari/development/tesi/acados/bin"
+        - "/usr/local/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.10/bin"
+        - "/usr/local/opt/ruby@3.3/bin"
+        - "/usr/local/opt/ruby@3.3/bin"
+        - "/usr/local/opt/ruby@3.3/bin"
+        - "/Users/eliasantuari/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/eliasantuari/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Library/Frameworks/Python.framework/Versions/3.10/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/pkg/env/global/bin"
+        - "/opt/X11/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/opt/homebrew/bin"
+        - "/Users/eliasantuari/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
+        - "/Users/eliasantuari/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/eliasantuari/development/tesi/acados/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.10/bin"
+        - "/usr/local/opt/ruby@3.3/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.13/bin"
+        - "/Users/eliasantuari/miniconda3/condabin"
+        - "/Users/eliasantuari/.rvm/bin"
+        - "/Users/eliasantuari/usr/local/bin"
+        - "/Users/eliasantuari/.lmstudio/bin"
+        - "/Users/eliasantuari/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
+        - "/Users/eliasantuari/.rvm/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Library/TeX/texbin"
+        - "/Users/eliasantuari/.rvm/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/bin"
+        - "/Users/eliasantuari/usr/local/bin"
+        - "/Users/eliasantuari/.lmstudio/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/cmake/data"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks"
+        - "/Applications/Xcode.app/Contents/Developer/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+...

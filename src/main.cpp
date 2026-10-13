@@ -8,6 +8,8 @@
 
 #include "config.h"
 #include "gait_planner.h"
+#include "obstacle_manager.h"
+#include "data_logger.h"
 
 #include "acados_solver_lipm_opti_pessi.h"
 
@@ -19,7 +21,14 @@ double dot2D(const std::array<double, 2>& v1, const std::array<double, 2>& v2) {
     return v1[0]*v2[0] + v1[1]*v2[1];
 }
 
+
+
 int main() {
+    // Total time of main
+    auto start_time_tot = std::chrono::high_resolution_clock::now();
+
+    Config::load("../config.yaml");
+
     std::cout << "--- Starting Simulation MPC in C++ ---" << std::endl;
 
     // Initialization of acados using the "python model"
@@ -32,6 +41,14 @@ int main() {
     // Instantiate gait_planner
     GaitPlanner gait_planner(Config::off_x, Config::off_y, Config::step_per_phase);
 
+    // Instantiate obs_manager
+    ObstacleManager obs_manager;
+    double dt_chosen = Config::dt_max; // Initialization
+
+
+    // Intstantiate logger
+    DataLogger logger(Config::sim_steps, Config::N_horizon);
+
     
     // State and control vectors initialization
     constexpr int NX = 22; 
@@ -39,8 +56,8 @@ int main() {
     constexpr int NP = 8;  
 
     std::array<double, 11> X_sim = {0};
-    X_sim[0] = Config::x_init_x;
-    X_sim[1] = Config::x_init_y;
+    X_sim[0] = Config::x_init[0];
+    X_sim[1] = Config::x_init[1];
     X_sim[2] = Config::theta_init;
     // Initialization of the gait
     auto init_gait = gait_planner.get_gait_horizon(0, Config::N_horizon)[0];
@@ -73,11 +90,14 @@ int main() {
     // Storing computation time
     std::vector<double> time_hist;
     time_hist.reserve(Config::sim_steps); // allocate memory
+    std::array<double, 2> obs_pos;
 
     // ------ MAIN LOOP ------
     for (int step = 0; step < Config::sim_steps; ++step) {
-        // Position of the obstacle - STATIC
-        std::array<double, 2> obs_pos = {Config::obs_pos_init[0], Config::obs_pos_init[1]};
+        // Position of the obstacle
+        std::array<double, 2> robot_pos = {X_sim[0], X_sim[1]};
+        std::array<double, 2> obs_pos = obs_manager.update(t_global, dt_chosen, robot_pos);
+        
         
         // Set time to zero for this loop
         X_sim[10] = 0.0; 
@@ -231,8 +251,22 @@ int main() {
         std::copy(x_next.begin() + 11, x_next.end(), X_sim.begin());
 
         // Save the optimal dt
-        double dt_chosen = u_opt[7];
+        dt_chosen = u_opt[7];
         t_global += dt_chosen;
+
+
+        // Extraction of the opti-pessi predictions
+        std::vector<std::array<double, 2>> pred_op(Config::N_horizon);
+        std::vector<std::array<double, 2>> pred_pe(Config::N_horizon);
+        for(int k = 0; k < Config::N_horizon; ++k){
+            pred_op[k] = {X_sol_t_prec[k+1][0], X_sol_t_prec[k+1][1]};
+            pred_pe[k] = {X_sol_t_prec[k+1][11], X_sol_t_prec[k+1][12]};
+        }
+
+        std::array<double, 11> u_apply;
+        std::copy(u_opt.begin(), u_opt.begin() + 11, u_apply.begin());
+
+        logger.log_step(solve_time, X_sim, u_apply, obs_pos, pred_op, pred_pe);
 
         // Log values
         log_file << step << "," << X_sim[0] << "," << X_sim[1] << "," 
@@ -267,11 +301,23 @@ int main() {
         std::cout << "------------------------------" << std::endl;
     }
 
+
+    // Total time of main
+    auto end_time_tot = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> elapsed_tot = end_time_tot - start_time_tot;
+        double solve_time_tot = elapsed_tot.count()*1000; // In milli seconds
+
+    std::cout << "Total program time: " << solve_time_tot << " ms" << std::endl;
+
+
     log_file.close();
     
     // Deallocate 
     lipm_opti_pessi_acados_free(capsule);
     lipm_opti_pessi_acados_free_capsule(capsule);
+
+    // Save data
+    logger.save_to_csv("mpc_simulation_data.csv");
 
     return 0;
 }

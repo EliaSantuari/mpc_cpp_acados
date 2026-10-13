@@ -851,6 +851,8 @@ CMakeFiles/mpc_sim.dir/src/main.cpp.o: \
   /Users/eliasantuari/development/tesi/mpc_cpp_acados/include/config.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/numbers \
   /Users/eliasantuari/development/tesi/mpc_cpp_acados/include/gait_planner.h \
+  /Users/eliasantuari/development/tesi/mpc_cpp_acados/include/obstacle_manager.h \
+  /Users/eliasantuari/development/tesi/mpc_cpp_acados/include/data_logger.h \
   /Users/eliasantuari/development/tesi/mpc_cpp_acados/c_generated_code/acados_solver_lipm_opti_pessi.h \
   /Users/eliasantuari/development/tesi/acados/include/acados/utils/types.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stdbool.h \

@@ -228,6 +228,9 @@ mpc_cpp_sim_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 mpc_cpp_sim_SOURCE_DIR:STATIC=/Users/eliasantuari/development/tesi/mpc_cpp_acados
 
+//The directory containing a CMake configuration file for yaml-cpp.
+yaml-cpp_DIR:PATH=/opt/homebrew/lib/cmake/yaml-cpp
+
 
 ########################
 # INTERNAL cache entries

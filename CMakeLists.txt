@@ -11,6 +11,8 @@ if(NOT DEFINED ENV{ACADOS_SOURCE_DIR})
 endif()
 set(ACADOS_DIR $ENV{ACADOS_SOURCE_DIR})
 
+find_package(yaml-cpp REQUIRED)
+
 include_directories(
     include
     ${ACADOS_DIR}/include
@@ -32,7 +34,10 @@ list(FILTER ACADOS_C_FILES EXCLUDE REGEX "main_.*\\.c")
 # 3. Creiamo l'eseguibile unendo il nostro C++ e il C generato da Acados
 add_executable(mpc_sim
     src/main.cpp
+    src/config.cpp
     src/gait_planner.cpp
+    src/obstacle_manager.cpp
+    src/data_logger.cpp
     ${ACADOS_C_FILES}
 )
 
@@ -42,4 +47,5 @@ target_link_libraries(mpc_sim
     hpipm
     blasfeo
     m
+    yaml-cpp
 )

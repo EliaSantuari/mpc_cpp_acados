@@ -1041,6 +1041,54 @@ c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.s
 .PHONY : c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.c.s
 
+src/config.o: src/config.cpp.o
+.PHONY : src/config.o
+
+# target to build an object file
+src/config.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/src/config.cpp.o
+.PHONY : src/config.cpp.o
+
+src/config.i: src/config.cpp.i
+.PHONY : src/config.i
+
+# target to preprocess a source file
+src/config.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/src/config.cpp.i
+.PHONY : src/config.cpp.i
+
+src/config.s: src/config.cpp.s
+.PHONY : src/config.s
+
+# target to generate assembly for a file
+src/config.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/src/config.cpp.s
+.PHONY : src/config.cpp.s
+
+src/data_logger.o: src/data_logger.cpp.o
+.PHONY : src/data_logger.o
+
+# target to build an object file
+src/data_logger.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/src/data_logger.cpp.o
+.PHONY : src/data_logger.cpp.o
+
+src/data_logger.i: src/data_logger.cpp.i
+.PHONY : src/data_logger.i
+
+# target to preprocess a source file
+src/data_logger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/src/data_logger.cpp.i
+.PHONY : src/data_logger.cpp.i
+
+src/data_logger.s: src/data_logger.cpp.s
+.PHONY : src/data_logger.s
+
+# target to generate assembly for a file
+src/data_logger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/src/data_logger.cpp.s
+.PHONY : src/data_logger.cpp.s
+
 src/gait_planner.o: src/gait_planner.cpp.o
 .PHONY : src/gait_planner.o
 
@@ -1088,6 +1136,30 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/obstacle_manager.o: src/obstacle_manager.cpp.o
+.PHONY : src/obstacle_manager.o
+
+# target to build an object file
+src/obstacle_manager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/src/obstacle_manager.cpp.o
+.PHONY : src/obstacle_manager.cpp.o
+
+src/obstacle_manager.i: src/obstacle_manager.cpp.i
+.PHONY : src/obstacle_manager.i
+
+# target to preprocess a source file
+src/obstacle_manager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/src/obstacle_manager.cpp.i
+.PHONY : src/obstacle_manager.cpp.i
+
+src/obstacle_manager.s: src/obstacle_manager.cpp.s
+.PHONY : src/obstacle_manager.s
+
+# target to generate assembly for a file
+src/obstacle_manager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/src/obstacle_manager.cpp.s
+.PHONY : src/obstacle_manager.cpp.s
 
 # Help Target
 help:
@@ -1212,12 +1284,21 @@ help:
 	@echo "... c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.o"
 	@echo "... c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.i"
 	@echo "... c_generated_code/phase_lipm_one_model/phase_lipm_one_dyn_disc_phi_fun_jac_hess.s"
+	@echo "... src/config.o"
+	@echo "... src/config.i"
+	@echo "... src/config.s"
+	@echo "... src/data_logger.o"
+	@echo "... src/data_logger.i"
+	@echo "... src/data_logger.s"
 	@echo "... src/gait_planner.o"
 	@echo "... src/gait_planner.i"
 	@echo "... src/gait_planner.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/obstacle_manager.o"
+	@echo "... src/obstacle_manager.i"
+	@echo "... src/obstacle_manager.s"
 .PHONY : help
 
 
