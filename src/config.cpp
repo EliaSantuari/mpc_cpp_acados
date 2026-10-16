@@ -7,6 +7,14 @@
 
 
 namespace Config{
+
+    // Helper to convert from vec to array
+    static std::array<double, 2> load_array2(const YAML::Node& node) {
+        auto vec = node.as<std::vector<double>>();
+        return {vec[0], vec[1]};
+    }
+
+
     void load(const std::string& filepath){
         try{
             YAML::Node config = YAML::LoadFile(filepath);
@@ -20,7 +28,7 @@ namespace Config{
             off_y = config["robot"]["off_y"].as<double>();
             mu = config["robot"]["mu"].as<double>();
             max_ext_sq = config["robot"]["max_ext_sq"].as<double>();
-            x_init = config["robot"]["x_init"].as<std::vector<double>>();
+            x_init = load_array2(config["robot"]["x_init"]);
             theta_init = config["robot"]["theta_init"].as<double>();
 
             // LIMITS
@@ -46,17 +54,18 @@ namespace Config{
             N_horizon = config["simulation"]["N_horizon"].as<double>();
             sim_steps = config["simulation"]["sim_steps"].as<double>();
             step_per_phase = config["simulation"]["step_per_phase"].as<double>();
-            c_target = config["simulation"]["c_target"].as<std::vector<double>>();
+            c_target = load_array2(config["simulation"]["c_target"]);
             
             // OBSTACLE
-            obs_pos_init = config["obstacles"]["obs_pos_init"].as<std::vector<double>>();
+            N_obs_max = config["obstacles"]["N_OBS_MAX"].as<double>();
+            obs_pos_init = load_array2(config["obstacles"]["obs_pos_init"]);
             r_obs = config["obstacles"]["r_obs"].as<double>();
             speed = config["obstacles"]["speed"].as<double>();
             y_dot_max = config["obstacles"]["y_dot_max"].as<double>();
-            top_pos_dyn = config["obstacles"]["top_pos_dyn"].as<std::vector<double>>();
-            bot_pos_dyn = config["obstacles"]["bot_pos_dyn"].as<std::vector<double>>();
+            top_pos_dyn = load_array2(config["obstacles"]["top_pos_dyn"]);
+            bot_pos_dyn = load_array2(config["obstacles"]["bot_pos_dyn"]);
             obs_type = config["obstacles"]["obs_type"].as<std::string>();    
-            obs_center = config["obstacles"]["obs_center"].as<std::vector<double>>();
+            obs_center = load_array2(config["obstacles"]["obs_center"]);
 
             std::cout << "[Config] File YAML loaded with success!" << std::endl;
         }  

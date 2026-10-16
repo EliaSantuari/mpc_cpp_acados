@@ -1,3 +1,4 @@
+/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles/generate_acados_model.dir
 /Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles/mpc_sim.dir
 /Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles/edit_cache.dir
 /Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles/rebuild_cache.dir

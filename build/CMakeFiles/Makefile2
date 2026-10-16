@@ -63,10 +63,12 @@ CMAKE_BINARY_DIR = /Users/eliasantuari/development/tesi/mpc_cpp_acados/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/generate_acados_model.dir/all
 all: CMakeFiles/mpc_sim.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
+codegen: CMakeFiles/generate_acados_model.dir/codegen
 codegen: CMakeFiles/mpc_sim.dir/codegen
 .PHONY : codegen
 
@@ -75,22 +77,55 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/generate_acados_model.dir/clean
 clean: CMakeFiles/mpc_sim.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/generate_acados_model.dir
+
+# All Build rule for target.
+CMakeFiles/generate_acados_model.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/generate_acados_model.dir/build.make CMakeFiles/generate_acados_model.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/generate_acados_model.dir/build.make CMakeFiles/generate_acados_model.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=1 "Built target generate_acados_model"
+.PHONY : CMakeFiles/generate_acados_model.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/generate_acados_model.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/generate_acados_model.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles 0
+.PHONY : CMakeFiles/generate_acados_model.dir/rule
+
+# Convenience name for target.
+generate_acados_model: CMakeFiles/generate_acados_model.dir/rule
+.PHONY : generate_acados_model
+
+# codegen rule for target.
+CMakeFiles/generate_acados_model.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/generate_acados_model.dir/build.make CMakeFiles/generate_acados_model.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=1 "Finished codegen for target generate_acados_model"
+.PHONY : CMakeFiles/generate_acados_model.dir/codegen
+
+# clean rule for target.
+CMakeFiles/generate_acados_model.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/generate_acados_model.dir/build.make CMakeFiles/generate_acados_model.dir/clean
+.PHONY : CMakeFiles/generate_acados_model.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/mpc_sim.dir
 
 # All Build rule for target.
-CMakeFiles/mpc_sim.dir/all:
+CMakeFiles/mpc_sim.dir/all: CMakeFiles/generate_acados_model.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22 "Built target mpc_sim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 "Built target mpc_sim"
 .PHONY : CMakeFiles/mpc_sim.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mpc_sim.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles 23
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/mpc_sim.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles 0
 .PHONY : CMakeFiles/mpc_sim.dir/rule
@@ -100,9 +135,9 @@ mpc_sim: CMakeFiles/mpc_sim.dir/rule
 .PHONY : mpc_sim
 
 # codegen rule for target.
-CMakeFiles/mpc_sim.dir/codegen:
+CMakeFiles/mpc_sim.dir/codegen: CMakeFiles/generate_acados_model.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mpc_sim.dir/build.make CMakeFiles/mpc_sim.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22 "Finished codegen for target mpc_sim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 "Finished codegen for target mpc_sim"
 .PHONY : CMakeFiles/mpc_sim.dir/codegen
 
 # clean rule for target.

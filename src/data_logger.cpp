@@ -3,7 +3,7 @@
 #include <iostream>
 
 // Constructor
-DataLogger::DataLogger(int expected_steps, int n_horizon) : n_horizon_(n_horizon){
+DataLogger::DataLogger(int expected_steps, int n_horizon, int n_obs_max) : n_horizon_(n_horizon), n_obs_max_(n_obs_max){
 
     // Pre-allocate memory
     time_hist_.reserve(expected_steps);
@@ -14,19 +14,19 @@ DataLogger::DataLogger(int expected_steps, int n_horizon) : n_horizon_(n_horizon
     history_pred_pe_.reserve(expected_steps);
 }
 
-
+ 
 void DataLogger::log_step(
     double comp_time,
     const std::array<double, 11>& x_curr,
     const std::array<double, 11>& u_opt,
-    const std::array<double, 2>& obs_pos,
+    const std::vector<ObstacleState>& active_obs,
     const std::vector<std::array<double, 2>>& pred_op,
     const std::vector<std::array<double, 2>>& pred_pe)
 {
     time_hist_.push_back(comp_time);
     history_X_.push_back(x_curr);
     history_U_.push_back(u_opt);
-    history_obs_.push_back(obs_pos);
+    history_obs_.push_back(active_obs);
 
     // Flatten the predictions from array of arrays to single vector
     std::vector<double> flat_pred_op(n_horizon_ * 2);
@@ -60,8 +60,10 @@ void DataLogger::save_to_csv(const std::string& filename) const {
     for(int i = 0; i<11; ++i) file << "x" << i << ",";
     // U (11)
     for(int i = 0; i<11; ++i) file << "u" << i << ",";
-    // Obs (2)
-    file << "obs_x,obs_y,";
+    // Obs (x, y, r)
+    for (int i = 0; i < n_obs_max_; ++i){
+        file << "obs_" << i << "_x,obs_" << i << "_y,obs_" << i << "_r,";
+    }
     // Pred OP (N*2)
     for(int k = 0; k < n_horizon_; ++k) file << "pred_op_" << k << "_x,pred_op_" << k << "_y,";
     // Pred PE (N*2)
@@ -78,7 +80,19 @@ void DataLogger::save_to_csv(const std::string& filename) const {
         file << time_hist_[i] << ",";
         for (double val : history_X_[i]) file << val << ",";
         for (double val : history_U_[i]) file << val << ",";
-        file << history_obs_[i][0] << "," << history_obs_[i][1] << ",";
+
+        const auto& obs_step = history_obs_[i];
+        for(int j = 0; j < n_obs_max_; ++j){
+            if (j < static_cast<int>(obs_step.size())){
+                file << obs_step[j].pos[0] << ","
+                    << obs_step[j].pos[1] << ","
+                    << obs_step[j].r_obs << ",";
+            }else{
+                // Ghost obstacles
+                file << "15.0,15.0,0.0,";
+            }
+        }
+        
 
         for (double val :history_pred_op_[i]) file << val << ",";
         for (size_t j = 0; j < history_pred_pe_[i].size(); ++j){

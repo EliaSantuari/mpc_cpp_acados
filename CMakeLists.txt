@@ -11,6 +11,25 @@ if(NOT DEFINED ENV{ACADOS_SOURCE_DIR})
 endif()
 set(ACADOS_DIR $ENV{ACADOS_SOURCE_DIR})
 
+
+#### SETTING UP THE OCP 
+find_package(Python3 REQUIRED COMPONENTS Interpreter)
+
+add_custom_target(generate_acados_model ALL
+    # Command to execute
+    COMMAND ${CMAKE_COMMAND} -E env 
+            "ACADOS_SOURCE_DIR=${ACADOS_DIR}"
+            "LD_LIBRARY_PATH=${ACADOS_DIR}/lib:$ENV{LD_LIBRARY_PATH}"
+            "DYLD_LIBRARY_PATH=${ACADOS_DIR}/lib:$ENV{DYLD_LIBRARY_PATH}"
+            ${Python3_EXECUTABLE} model_gen.py
+    WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/model_generator
+
+    COMMENT "Generation of the acados model..."
+)
+
+
+
+
 find_package(yaml-cpp REQUIRED)
 
 include_directories(
@@ -41,7 +60,9 @@ add_executable(mpc_sim
     ${ACADOS_C_FILES}
 )
 
-# 4. Linkiamo le dipendenze esterne (solo acados base, hpipm e blasfeo)
+add_dependencies(mpc_sim generate_acados_model)
+
+# Linkiamo le dipendenze esterne (solo acados base, hpipm e blasfeo)
 target_link_libraries(mpc_sim
     acados
     hpipm

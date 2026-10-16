@@ -20,6 +20,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/Compiler/Clang.cmake"
   "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/Compiler/GNU.cmake"
+  "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake"
+  "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/FindPackageMessage.cmake"
+  "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/FindPython/Support.cmake"
+  "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/FindPython3.cmake"
   "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/Internal/CMakeCLinkerInformation.cmake"
   "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/Internal/CMakeCXXLinkerInformation.cmake"
   "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/cmake/data/share/cmake-4.2/Modules/Internal/CMakeCommonLinkerInformation.cmake"
@@ -62,5 +66,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/generate_acados_model.dir/DependInfo.cmake"
   "CMakeFiles/mpc_sim.dir/DependInfo.cmake"
   )

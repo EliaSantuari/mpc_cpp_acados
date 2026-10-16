@@ -33,6 +33,7 @@ extern "C" {
 #define casadi_s0 CASADI_PREFIX(s0)
 #define casadi_s1 CASADI_PREFIX(s1)
 #define casadi_s2 CASADI_PREFIX(s2)
+#define casadi_s3 CASADI_PREFIX(s3)
 
 /* Symbol visibility in DLLs */
 #ifndef CASADI_SYMBOL_EXPORT
@@ -50,25 +51,26 @@ extern "C" {
 #endif
 
 static const casadi_int casadi_s0[3] = {22, 1, 1};
-static const casadi_int casadi_s1[3] = {8, 1, 1};
-static const casadi_int casadi_s2[113] = 
-  {44, 22, 0, 6, 12, 15, 21, 27,
+static const casadi_int casadi_s1[3] = {28, 1, 1};
+static const casadi_int casadi_s2[3] = {12, 1, 1};
+static const casadi_int casadi_s3[113] = 
+  {50, 22, 0, 6, 12, 15, 21, 27,
   38, 39, 40, 41, 42, 44, 50, 56,
   59, 65, 71, 82, 83, 84, 85, 86,
-  88, 4, 7, 22, 25, 28, 30, 4,
-  7, 23, 26, 29, 31, 7, 24, 27,
-  4, 7, 22, 25, 28, 30, 4, 7,
-  23, 26, 29, 31, 4, 5, 6, 7,
-  22, 23, 27, 28, 29, 30, 31, 0,
-  1, 2, 3, 7, 32, 15, 18, 33,
-  36, 39, 41, 15, 18, 34, 37, 40,
-  42, 18, 35, 38, 15, 18, 33, 36,
-  39, 41, 15, 18, 34, 37, 40, 42,
-  15, 16, 17, 18, 33, 34, 38, 39,
-  40, 41, 42, 11, 12, 13, 14, 18,
-  43};
+  88, 4, 7, 28, 31, 34, 36, 4,
+  7, 29, 32, 35, 37, 7, 30, 33,
+  4, 7, 28, 31, 34, 36, 4, 7,
+  29, 32, 35, 37, 4, 5, 6, 7,
+  28, 29, 33, 34, 35, 36, 37, 0,
+  1, 2, 3, 7, 38, 18, 21, 39,
+  42, 45, 47, 18, 21, 40, 43, 46,
+  48, 21, 41, 44, 18, 21, 39, 42,
+  45, 47, 18, 21, 40, 43, 46, 48,
+  18, 19, 20, 21, 39, 40, 44, 45,
+  46, 47, 48, 14, 15, 16, 17, 21,
+  49};
 
-/* lipm_opti_pessi_dyn_disc_phi_fun_jac:(i0[22],i1[22],i2[8])->(o0[22],o1[44x22,88nz]) */
+/* lipm_opti_pessi_dyn_disc_phi_fun_jac:(i0[22],i1[28],i2[12])->(o0[22],o1[50x22,88nz]) */
 static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw, casadi_real* w, int mem) {
   casadi_real a00, a01, a02, a03, a04, a05, a06, a07, a08, a09, a10, a11;
   casadi_real a12, a13, a14, a15, a16, a17, a18, a19, a20, a21, a22, a23;
@@ -172,7 +174,7 @@ static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw,
   a34=arg[0]? arg[0][10] : 0;
   a34=(a34+a01);
   if (res[0]!=0) res[0][10]=a34;
-  a34=arg[1]? arg[1][18] : 0;
+  a34=arg[1]? arg[1][21] : 0;
   a37=(a00*a34);
   a38=cosh(a37);
   a39=arg[0]? arg[0][11] : 0;
@@ -184,7 +186,7 @@ static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw,
   a40=(a40+a43);
   a43=(a08-a38);
   a44=arg[0]? arg[0][17] : 0;
-  a45=arg[1]? arg[1][15] : 0;
+  a45=arg[1]? arg[1][18] : 0;
   a46=arg[0]? arg[0][19] : 0;
   a47=(a46-a44);
   a48=(a45*a47);
@@ -225,14 +227,14 @@ static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw,
   if (res[0]!=0) res[0][15]=a49;
   a15=(a34/a15);
   a44=(a44-a39);
-  a49=arg[1]? arg[1][17] : 0;
+  a49=arg[1]? arg[1][20] : 0;
   a56=(a40-a54);
   a56=(a25*a56);
   a56=(a24*a56);
   a57=(a49*a56);
   a58=(a44*a57);
   a51=(a51-a40);
-  a59=arg[1]? arg[1][16] : 0;
+  a59=arg[1]? arg[1][19] : 0;
   a60=(a39-a48);
   a60=(a25*a60);
   a60=(a24*a60);
@@ -252,13 +254,13 @@ static int casadi_f0(const casadi_real** arg, casadi_real** res, casadi_int* iw,
   a64=(a15*a58);
   a64=(a55+a64);
   if (res[0]!=0) res[0][16]=a64;
-  a64=arg[1]? arg[1][11] : 0;
-  if (res[0]!=0) res[0][17]=a64;
-  a64=arg[1]? arg[1][12] : 0;
-  if (res[0]!=0) res[0][18]=a64;
-  a64=arg[1]? arg[1][13] : 0;
-  if (res[0]!=0) res[0][19]=a64;
   a64=arg[1]? arg[1][14] : 0;
+  if (res[0]!=0) res[0][17]=a64;
+  a64=arg[1]? arg[1][15] : 0;
+  if (res[0]!=0) res[0][18]=a64;
+  a64=arg[1]? arg[1][16] : 0;
+  if (res[0]!=0) res[0][19]=a64;
+  a64=arg[1]? arg[1][17] : 0;
   if (res[0]!=0) res[0][20]=a64;
   a64=arg[0]? arg[0][21] : 0;
   a64=(a64+a34);
@@ -636,8 +638,8 @@ CASADI_SYMBOL_EXPORT const char* lipm_opti_pessi_dyn_disc_phi_fun_jac_name_out(c
 CASADI_SYMBOL_EXPORT const casadi_int* lipm_opti_pessi_dyn_disc_phi_fun_jac_sparsity_in(casadi_int i) {
   switch (i) {
     case 0: return casadi_s0;
-    case 1: return casadi_s0;
-    case 2: return casadi_s1;
+    case 1: return casadi_s1;
+    case 2: return casadi_s2;
     default: return 0;
   }
 }
@@ -645,7 +647,7 @@ CASADI_SYMBOL_EXPORT const casadi_int* lipm_opti_pessi_dyn_disc_phi_fun_jac_spar
 CASADI_SYMBOL_EXPORT const casadi_int* lipm_opti_pessi_dyn_disc_phi_fun_jac_sparsity_out(casadi_int i) {
   switch (i) {
     case 0: return casadi_s0;
-    case 1: return casadi_s2;
+    case 1: return casadi_s3;
     default: return 0;
   }
 }

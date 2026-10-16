@@ -22,6 +22,19 @@ double dot2D(const std::array<double, 2>& v1, const std::array<double, 2>& v2) {
 }
 
 
+std::array<double, 4> random_obs_gen(){
+    static std::random_device rd;
+    static std::mt19937 gen = std::mt19937(rd());
+
+    std::uniform_real_distribution<double> pos_init_x(1.0, 9.0);
+    std::uniform_real_distribution<double> pos_init_y(-2.0, 2.0);
+    std::uniform_real_distribution<double> r_obs(0.1, 0.4);
+    std::uniform_real_distribution<double> speed(0.1, 0.5);
+    
+    return {pos_init_x(gen), pos_init_y(gen), r_obs(gen), speed(gen)};
+}
+
+
 
 int main() {
     // Total time of main
@@ -42,18 +55,43 @@ int main() {
     GaitPlanner gait_planner(Config::off_x, Config::off_y, Config::step_per_phase);
 
     // Instantiate obs_manager
-    ObstacleManager obs_manager;
+    size_t N_obs_max = Config::N_obs_max;
+    ObstacleManager obs_manager(N_obs_max);
+    
+
+
+    // Populate manager with obstacles
+    for(size_t i = 0; i < N_obs_max; ++i){
+        if(Config::obs_type == "random"){
+            std::array<double, 4> bounds = {1.0, 9.0, -2.0, 2.0};
+            auto [x, y, r, speed] = random_obs_gen();
+            std::array<double, 2> start_pos = {x, y};
+            std::cout << x << " " << y << " " << r << " " << speed << std::endl;
+            obs_manager.add_obstacle(std::make_unique<RandomObstacle>(start_pos, r, speed, bounds, Config::y_dot_max));
+        }else if(Config::obs_type == "static"){
+            obs_manager.add_obstacle(std::make_unique<StaticObstacle>(Config::obs_pos_init, Config::r_obs, Config::y_dot_max));
+        }else if(Config::obs_type == "dynamic"){
+            obs_manager.add_obstacle(std::make_unique<DynamicObstacle>(Config::top_pos_dyn, Config::bot_pos_dyn, Config::r_obs, Config::speed, Config::y_dot_max));
+        }else if(Config::obs_type == "adversarial"){
+            obs_manager.add_obstacle(std::make_unique<AdversarialObstacle>(Config::obs_pos_init, Config::r_obs, Config::speed, Config::y_dot_max));
+        }else if(Config::obs_type == "circular"){
+            obs_manager.add_obstacle(std::make_unique<CircularObstacle>(Config::obs_pos_init, Config::obs_center, Config::r_obs, Config::speed, Config::y_dot_max));
+        }
+    }
+
+
     double dt_chosen = Config::dt_max; // Initialization
 
 
     // Intstantiate logger
-    DataLogger logger(Config::sim_steps, Config::N_horizon);
+    DataLogger logger(Config::sim_steps, Config::N_horizon, Config::N_obs_max);
 
     
     // State and control vectors initialization
-    constexpr int NX = 22; 
-    constexpr int NU = 22; 
-    constexpr int NP = 8;  
+    constexpr int NX = LIPM_OPTI_PESSI_NX; 
+    constexpr int NU = LIPM_OPTI_PESSI_NU; 
+    constexpr int NP = LIPM_OPTI_PESSI_NP;  
+    int n_u_branch = 8 + (3 * N_obs_max);
 
     std::array<double, 11> X_sim = {0};
     X_sim[0] = Config::x_init[0];
@@ -77,7 +115,7 @@ int main() {
     
     std::array<double, NU> u_init = {0};
     u_init[7] = Config::dt_max;
-    u_init[18] = Config::dt_max;
+    u_init[n_u_branch + 7] = Config::dt_max;
     std::vector<std::array<double, NU>> U_sol_t_prec(Config::N_horizon, u_init);
 
     // Log of values
@@ -93,30 +131,15 @@ int main() {
     std::array<double, 2> obs_pos;
 
 
-    // Setting target pointing to model in c_generated_code
-    double yref[LIPM_OPTI_PESSI_NY] = {0};
-    for(int k = 0; k < Config::N_horizon; ++k){
-        yref[0] = Config::c_target[0];
-        yref[1] = Config::c_target[1];
-        yref[17] = Config::c_target[0];
-        yref[18] = Config::c_target[1];
-
-        ocp_nlp_cost_model_set(capsule->nlp_config, capsule->nlp_dims, capsule->nlp_in, k, "yref", yref);
-    }
-    double yref_e[LIPM_OPTI_PESSI_NYN] = {0};
-    yref_e[0] = Config::c_target[0];
-    yref_e[1] = Config::c_target[1];
-    yref_e[6] = Config::c_target[0];
-    yref_e[7] = Config::c_target[1];
-    ocp_nlp_cost_model_set(capsule->nlp_config, capsule->nlp_dims, capsule->nlp_in, Config::N_horizon, "yref", yref_e);
-
+    
 
 
     // ------ MAIN LOOP ------
     for (int step = 0; step < Config::sim_steps; ++step) {
         // Position of the obstacle
         std::array<double, 2> robot_pos = {X_sim[0], X_sim[1]};
-        std::array<double, 2> obs_pos = obs_manager.update(t_global, dt_chosen, robot_pos);
+        obs_manager.update_all(dt_chosen, t_global, robot_pos);
+        auto active_obstacles = obs_manager.get_active_obstacles();
         
         
         // Set time to zero for this loop
@@ -128,6 +151,44 @@ int main() {
         ocp_nlp_constraints_model_set(capsule->nlp_config, capsule->nlp_dims, capsule->nlp_in, capsule->nlp_out, 0, "lbx", X_aug.data());
         ocp_nlp_constraints_model_set(capsule->nlp_config, capsule->nlp_dims, capsule->nlp_in, capsule->nlp_out, 0, "ubx", X_aug.data());
 
+
+        // Local target
+        double dir_to_target_x = Config::c_target[0] - X_sim[0];
+        double dir_to_target_y = Config::c_target[1] - X_sim[1];
+        std::array<double, 2> dir_to_target = {dir_to_target_x, dir_to_target_y};
+        double dist_to_final = norm2D(dir_to_target);
+
+        double max_lookahead = 1.5;
+        double local_target_x;
+        double local_target_y;
+        if(dist_to_final > max_lookahead){
+            local_target_x = X_sim[0] + (dir_to_target_x / dist_to_final) * max_lookahead;
+            local_target_y = X_sim[1] + (dir_to_target_y / dist_to_final) * max_lookahead;
+        }else{
+            local_target_x = Config::c_target[0];
+            local_target_y = Config::c_target[1];
+        }
+
+
+        // Setting target pointing to model in c_generated_code
+        double yref[LIPM_OPTI_PESSI_NY] = {0};
+        for(int k = 0; k < Config::N_horizon; ++k){
+            yref[0] = local_target_x;
+            yref[1] = local_target_y;
+            yref[17] = local_target_x;
+            yref[18] = local_target_y;
+
+            ocp_nlp_cost_model_set(capsule->nlp_config, capsule->nlp_dims, capsule->nlp_in, k, "yref", yref);
+        }
+        double yref_e[LIPM_OPTI_PESSI_NYN] = {0};
+        yref_e[0] = local_target_x;
+        yref_e[1] = local_target_y;
+        yref_e[6] = local_target_x;
+        yref_e[7] = local_target_y;
+        ocp_nlp_cost_model_set(capsule->nlp_config, capsule->nlp_dims, capsule->nlp_in, Config::N_horizon, "yref", yref_e);
+
+
+
         // ---- SET PARAMETERS and WARM START -----
         // Horizon of the gait
         auto gait_horizon = gait_planner.get_gait_horizon(step, Config::N_horizon);
@@ -137,19 +198,59 @@ int main() {
 
             auto off0 = gait_planner.get_hip_offset(gait_k.first);  
             auto off1 = gait_planner.get_hip_offset(gait_k.second);
-            double r_dyn = Config::r_obs + 0.1;
 
+            std::vector<double> p_val(NP, 0.0);
+            p_val[0] = off0[0]; p_val[1] = off0[1];
+            p_val[2] = off1[0]; p_val[3] = off1[1];
+
+            for(size_t i = 0; i < N_obs_max; ++i){
+                int idx_p = 4 + (4 * i);
+                if(i < active_obstacles.size()){
+                    p_val[idx_p] = active_obstacles[i].pos[0];
+                    p_val[idx_p + 1] = active_obstacles[i].pos[1];
+                    p_val[idx_p + 2] = active_obstacles[i].r_obs + 0.1;
+                    p_val[idx_p + 3] = active_obstacles[i].y_dot_max;
+                }else{
+                    // GHOST OBSTACLES
+                    p_val[idx_p] = 15.0 + (2.0 * i);
+                    p_val[idx_p + 1] = 15.0;
+                    p_val[idx_p + 2] = 0.0;
+                    p_val[idx_p + 3] = 0.0;
+                }
+            }
             // Set params
-            double p_val[NP] = {off0[0], off0[1], off1[0], off1[1], obs_pos[0], obs_pos[1], r_dyn, Config::y_dot_max};
-            lipm_opti_pessi_acados_update_params(capsule, k, p_val, NP);
-
+            lipm_opti_pessi_acados_update_params(capsule, k, p_val.data(), NP);
         }
+
+
+        // Lambda helper to comput the hyperplane (ax, ay, b) given the obstacle and robot points
+        auto calc_hyperplane_for_obs = [](const std::array<double, 2>& obs_p, 
+                                        const std::array<double, 2>& com,
+                                        const std::array<double, 2>& hip0,
+                                        const std::array<double, 2>& hip1) -> std::array<double, 3>{
+            double d_com = norm2D({obs_p[0]-com[0], obs_p[1]-com[1]});
+            double d_h0 = norm2D({obs_p[0]-hip0[0], obs_p[1]-hip0[1]});
+            double d_h1 = norm2D({obs_p[0]-hip1[0], obs_p[1]-hip1[1]});
+
+            double min_d = std::min({d_com, d_h0, d_h1});
+            std::array<double, 2> closest = com;
+            if(min_d == d_h0) closest = hip0;
+            else if(min_d == d_h1) closest = hip1;
+
+            std::array<double, 2> dir = {obs_p[0] - closest[0], obs_p[1] - closest[1]};
+            double dist = norm2D(dir) + 1e-5;
+            std::array<double, 2> a = {dir[0]/dist, dir[1]/dist};
+            std::array<double, 2> mid = {(closest[0]+obs_p[0])/2.0, (closest[1]+obs_p[1])/2.0};
+            double b = -dot2D(a, mid);
+
+            return {a[0], a[1], b};
+        };
+
 
         for (int k = 0; k < Config::N_horizon; ++k) {
             auto gait_k = gait_horizon[k];
             
     
-
             // Indeces for shifts: last step repeat last value
             int idx_shift_u = (k < Config::N_horizon - 1) ? k + 1 : k;
             int idx_shift_x = k + 1;
@@ -158,62 +259,52 @@ int main() {
             const auto& u_prev = U_sol_t_prec[idx_shift_u];
 
             // Optimistic and pessimistic
-            std::array<double, 3> state_op = {x_prev[0], x_prev[1], x_prev[2]};
-            std::array<double, 3> state_pe = {x_prev[11], x_prev[12], x_prev[13]};
+            std::array<double, 2> com_op = {x_prev[0], x_prev[1]};
+            std::array<double, 2> com_pe = {x_prev[11], x_prev[12]};
+
             // Guess of hips position
-            auto hips_guess_op = gait_planner.compute_hip_positions(state_op, gait_k);
-            auto hips_guess_pe = gait_planner.compute_hip_positions(state_pe, gait_k);
+            auto hips_op = gait_planner.compute_hip_positions({com_op[0], com_op[1], x_prev[2]}, gait_k);
+            auto hips_pe = gait_planner.compute_hip_positions({com_pe[0], com_pe[1], x_prev[13]}, gait_k);
+            std::array<double, 2> h0_op = {hips_op[0], hips_op[1]};
+            std::array<double, 2> h1_op = {hips_op[2], hips_op[3]};
+            std::array<double, 2> h0_pe = {hips_pe[0], hips_pe[1]};
+            std::array<double, 2> h1_pe = {hips_pe[2], hips_pe[3]};
 
-            
-            
-            // Compute the closest point to obstacle
-            auto calc_closest = [&](std::array<double, 2> pt, std::array<double, 4> hips) {
-                std::array<double, 2> hip0 = {hips[0], hips[1]};
-                std::array<double, 2> hip1 = {hips[2], hips[3]};
-                double d_pt = norm2D({obs_pos[0]-pt[0], obs_pos[1]-pt[1]});
-                double d_h0 = norm2D({obs_pos[0]-hip0[0], obs_pos[1]-hip0[1]});
-                double d_h1 = norm2D({obs_pos[0]-hip1[0], obs_pos[1]-hip1[1]});
-                double min_d = std::min({d_pt, d_h0, d_h1});
-                if(min_d == d_h0) return hip0;
-                if(min_d == d_h1) return hip1;
-                return pt;
-            };
-            // Compute the hyperplane guess for each node
-            auto calc_hyperplane = [&](std::array<double, 2> closest) {
-                std::array<double, 2> dir = {obs_pos[0]-closest[0], obs_pos[1]-closest[1]};
-                double dist = norm2D(dir) + 1e-5;
-                std::array<double, 2> a = {dir[0]/dist, dir[1]/dist};
-                std::array<double, 2> mid = {(closest[0]+obs_pos[0])/2.0, (closest[1]+obs_pos[1])/2.0};
-                double b = -dot2D(a, mid);
-                return std::make_pair(a, b);
-            };
-            
-            // Return the closest point
-            auto closest_op = calc_closest({state_op[0], state_op[1]}, hips_guess_op);
-            auto closest_pe = calc_closest({state_pe[0], state_pe[1]}, hips_guess_pe);
-            // Return the a,b pair
-            auto hp_op = calc_hyperplane(closest_op);
-            auto hp_pe = calc_hyperplane(closest_pe);
+            // Base vector for u_guess (only first 8 elements)
+            std::vector<double> u_guess_op = {hips_op[0], hips_op[1], hips_op[2], hips_op[3], 0.5, 0.0, 0.0, u_prev[7]};
+            std::vector<double> u_guess_pe = {hips_pe[0], hips_pe[1], hips_pe[2], hips_pe[3], 0.5, 0.0, 0.0, u_prev[n_u_branch + 7]};
 
+            // Add hyperplanes for each obstacle
+            for(size_t i = 0; i < N_obs_max; ++i){
+                std::array<double, 2> obs_pos_k;
+                if(i < active_obstacles.size()) obs_pos_k = active_obstacles[i].pos;
+                else obs_pos_k = {15.0 + 2.0 * i, 15.0};
 
-            // Fill up the u_guess vector
-            std::array<double, NU> u_guess;
-            auto fill_u = [](double* dst, std::array<double,4> hips, double dt, auto hp) {
-                dst[0]=hips[0]; dst[1]=hips[1]; dst[2]=hips[2]; dst[3]=hips[3];
-                dst[4]=0.5; dst[5]=0.0; dst[6]=0.0; dst[7]=dt;
-                dst[8]=hp.first[0]; dst[9]=hp.first[1]; dst[10]=hp.second;
-            };
-            
-            fill_u(&u_guess[0], hips_guess_op, u_prev[7], hp_op);
-            fill_u(&u_guess[11], hips_guess_pe, u_prev[18], hp_pe);
-            
-            // First steps must be the same! We could use the pessimistic to be more conservative
-            if (k == 0) std::copy(u_guess.begin()+11, u_guess.begin()+22, u_guess.begin());
+                auto hp_op = calc_hyperplane_for_obs(obs_pos_k, com_op, h0_op, h1_op);
+                auto hp_pe = calc_hyperplane_for_obs(obs_pos_k, com_pe, h0_pe, h1_pe);
+
+                u_guess_op.insert(u_guess_op.end(), hp_op.begin(), hp_op.end());
+                u_guess_pe.insert(u_guess_pe.end(), hp_pe.begin(), hp_pe.end());
+            }
+
+            // Unify the two branches
+            std::vector<double> u_guess_tot;
+            if (k == 0){
+                // Fisrt step they should be the same - pessimistic
+                u_guess_tot = u_guess_pe;
+                u_guess_tot.insert(u_guess_tot.end(), u_guess_pe.begin(), u_guess_pe.end());
+            }else {
+                u_guess_tot = u_guess_op;
+                u_guess_tot.insert(u_guess_tot.end(), u_guess_pe.begin(), u_guess_pe.end());
+            }
+
 
             // Insert the guess in acados
-            ocp_nlp_out_set(capsule->nlp_config, capsule->nlp_dims, capsule->nlp_out, capsule->nlp_in, k, "u", u_guess.data());
+            ocp_nlp_out_set(capsule->nlp_config, capsule->nlp_dims, capsule->nlp_out, capsule->nlp_in, k, "u", u_guess_tot.data());
 
             // Construction of X_guess
+            std::array<double, 3> state_op = {x_prev[0], x_prev[1], x_prev[2]};
+            std::array<double, 3> state_pe = {x_prev[11], x_prev[12], x_prev[13]};
             std::array<double, NX> x_guess = {0};
             if (k > 0) {
                 // Optimistic
@@ -228,7 +319,7 @@ int main() {
                 x_guess[14] = x_prev[14];  x_guess[15] = x_prev[15];  x_guess[16] = x_prev[16];
                 x_guess[17] = x_prev[17];  x_guess[18] = x_prev[18];  
                 x_guess[19] = x_prev[19];  x_guess[20] = x_prev[20];
-                x_guess[21] = u_prev[18]; // Propagation of previous dt
+                x_guess[21] = u_prev[n_u_branch + 7]; // Propagation of previous dt
 
                 // Assign to acados
                 ocp_nlp_out_set(capsule->nlp_config, capsule->nlp_dims, capsule->nlp_out, capsule->nlp_in, k, "x", x_guess.data());
@@ -286,7 +377,7 @@ int main() {
         std::array<double, 11> u_apply;
         std::copy(u_opt.begin(), u_opt.begin() + 11, u_apply.begin());
 
-        logger.log_step(solve_time, X_sim, u_apply, obs_pos, pred_op, pred_pe);
+        logger.log_step(solve_time, X_sim, u_apply, active_obstacles, pred_op, pred_pe);
 
         // Log values
         log_file << step << "," << X_sim[0] << "," << X_sim[1] << "," 

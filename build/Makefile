@@ -118,6 +118,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named generate_acados_model
+
+# Build rule for target.
+generate_acados_model: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 generate_acados_model
+.PHONY : generate_acados_model
+
+# fast build rule for target.
+generate_acados_model/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/generate_acados_model.dir/build.make CMakeFiles/generate_acados_model.dir/build
+.PHONY : generate_acados_model/fast
+
+#=============================================================================
 # Target rules for targets named mpc_sim
 
 # Build rule for target.
@@ -642,6 +655,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... generate_acados_model"
 	@echo "... mpc_sim"
 	@echo "... c_generated_code/acados_solver_lipm_opti_pessi.o"
 	@echo "... c_generated_code/acados_solver_lipm_opti_pessi.i"
