@@ -68,7 +68,7 @@ include CMakeFiles/generate_acados_model.dir/progress.make
 
 CMakeFiles/generate_acados_model:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/eliasantuari/development/tesi/mpc_cpp_acados/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generation of the acados model..."
-	cd /Users/eliasantuari/development/tesi/mpc_cpp_acados/model_generator && /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/cmake/data/bin/cmake -E env ACADOS_SOURCE_DIR=/Users/eliasantuari/development/tesi/acados LD_LIBRARY_PATH=/Users/eliasantuari/development/tesi/acados/lib: DYLD_LIBRARY_PATH=/Users/eliasantuari/development/tesi/acados/lib: /usr/local/bin/python3 model_gen.py
+	cd /Users/eliasantuari/development/tesi/mpc_cpp_acados/model_generator && /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/cmake/data/bin/cmake -E env ACADOS_SOURCE_DIR=/Users/eliasantuari/development/tesi/acados LD_LIBRARY_PATH=/Users/eliasantuari/development/tesi/acados/lib: DYLD_LIBRARY_PATH=/Users/eliasantuari/development/tesi/acados/lib:/Users/eliasantuari/development/tesi/acados/lib:/opt/homebrew/lib::/Users/eliasantuari/Desktop/mosek/11.0/tools/platform/osx64/bin /usr/local/bin/python3 model_gen.py
 
 CMakeFiles/generate_acados_model.dir/codegen:
 .PHONY : CMakeFiles/generate_acados_model.dir/codegen

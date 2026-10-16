@@ -118,9 +118,7 @@ int main() {
     u_init[n_u_branch + 7] = Config::dt_max;
     std::vector<std::array<double, NU>> U_sol_t_prec(Config::N_horizon, u_init);
 
-    // Log of values
-    std::ofstream log_file("mpc_log.csv");
-    log_file << "step,x,y,theta,vx,vy\n"; 
+    
 
     double t_global = 0.0;
     int reached_target_flag = 0;
@@ -379,9 +377,7 @@ int main() {
 
         logger.log_step(solve_time, X_sim, u_apply, active_obstacles, pred_op, pred_pe);
 
-        // Log values
-        log_file << step << "," << X_sim[0] << "," << X_sim[1] << "," 
-                 << X_sim[2] << "," << X_sim[3] << "," << X_sim[4] << "\n";
+        
         
         // Print come data
         std::cout << "Step " << step << " | Pos: [" << X_sim[0] << ", " << X_sim[1] << "] | dt: " << dt_chosen*1000.0 << " ms | Comp.time: " << solve_time << " ms" << std::endl;
@@ -421,8 +417,6 @@ int main() {
 
     std::cout << "Total program time: " << solve_time_tot << " ms" << std::endl;
 
-
-    log_file.close();
     
     // Deallocate 
     lipm_opti_pessi_acados_free(capsule);
